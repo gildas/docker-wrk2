@@ -8,9 +8,11 @@ RUN git clone https://github.com/giltene/wrk2.git \
     && make
 
 FROM alpine
-LABEL maintainer="Gildas Cherruel <gildas@breizh.org>"
-LABEL version="0.0.1"
-LABEL description="Runs wrk2"
+LABEL org.opencontainers.image.title="wrk2"
+LABEL org.opencontainers.image.description="Runs wrk2"
+LABEL org.opencontainers.image.authors="Gildas Cherruel <gildas.cherruel@genesys.com>"
+LABEL org.opencontainers.image.version="0.0.2"
+LABEL org.opencontainers.image.licenses="MIT"
 
 RUN apk add --no-cache libgcc
 
